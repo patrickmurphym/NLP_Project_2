@@ -4,9 +4,11 @@ Evaluating Hawkishness and Dovishness of FOMC Meeting Minutes
 My project aimed to investigate the impact of the Federal Reserve's hawkish or dovish statements on the economy. In this comprehensive analysis, I utilized Natural Language Processing (NLP) techniques to evaluate the tone of the Federal Reserve's Press Release statements and transcripts of conferences, specifically focusing on determining how hawkish or dovish these communications were.
 The documents that I analyzed were the Press Release statements and the transcripts of the Press Conferences, held by the Federal Reserve. The list of these documents is found in this website:
 * https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm
-I processed these documents using Python. The Press Release statements were directly obtained from the web, so they were processed as HTML documents. The Press Conference transcripts were stored as PDF files. I used a Python package to read them, clean the text and store them in TXT files.
+
+I processed these documents using Python. The Press Release statements were directly obtained from the web, so they were processed as HTML documents. The Press Conference transcripts were stored as PDF files. I used a Python package to read them, clean the text, and store them in TXT files.
 Then, I had to assign scores to determine how hawkish or dovish the documents were. The scores were determined using FinBERT.
-https://github.com/gtfintechlab/fomc-hawkish-dovish/tree/main
+* https://github.com/gtfintechlab/fomc-hawkish-dovish/tree/main
+
 FinBERT analyses each sentence and assigns a label. To quantify the level of hawkishness or dovishness in these statements, I assigned numerical scores: a more positive score indicated a hawkish tone, while a more negative score indicated a dovish one. The score was made by adding the number of hawkish sentences and subtracting the number of dovish sentences. Neutral sentences were not considered.
 Given that the Press Conference transcripts had a higher number of sentences than the Press Release statements, the latter had greater scores. Therefore, I took a weighted average where I assigned more weight to the score of the Press Release statements.
 This scoring system allowed me to quantitatively measure the sentiment and policy stance conveyed by the Federal Reserve in its communications. We can see that during the pandemic, the FED became more dovish, and in the subsequent years of inflation, more hawkish.
