@@ -19,10 +19,10 @@ In addition to analyzing the textual data, I collected financial data related to
 
 The core of my analysis involved examining the relationships between the calculated scores for hawkishness-dovishness and the financial data. My findings showed positive correlations between the scores and the financial metrics, suggesting a connection between the Federal Reserve's tone and market behavior. In particular, I noted a significant correlation of 0.3 between the scores and the 2-year-10-year yield spread, which implies that there is a positive association. This result indicates that when the Federal Reserve's statements were more hawkish, it had a positive influence on the yield spread, and vice versa.
 
-Correlation:
-Spread percent change: 0.317493
-2-yr percent change: 0.130166
-10-yr percent change: 0.151796
+Correlation table:
+| | Spread percent change | 2-yr percent change | 10-yr percent change |
+| -------- | -------- | -------- | -------- |
+|   Score   |   0.317493   |   0.130166   |   0.151796   |
 
 Overall, my project provided valuable insights into the interplay between central bank communications and financial markets, demonstrating that NLP techniques can be effectively employed to measure sentiment and gauge their potential impacts on economic indicators and market behavior. My work could have significant implications for investors and financial professionals seeking to understand and respond to central bank policies and their associated market movements.
 
